@@ -1,0 +1,401 @@
+---
+layout: null
+title: Team Homepage Demo
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Underwater Embodied Intelligence Center</title>
+    <meta
+      name="description"
+      content="A bilingual demo homepage for an academic team focused on underwater robotics, robot simulation, and intelligent systems infrastructure."
+    >
+    <link rel="stylesheet" href="{{ '/assets/css/team-home.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#home" data-view-link="home" aria-label="Underwater Embodied Intelligence Center">
+          <img class="brand-logo" src="{{ '/assets/img/team/uwei-logo-header.png' | relative_url }}" alt="Underwater Embodied Intelligence Discipline and Technology Center logo">
+          <span>
+            <span class="brand-name">水下具身智能学科与技术中心</span>
+            <span class="brand-subtitle">Underwater Embodied Intelligence Discipline and Technology Center</span>
+          </span>
+        </a>
+
+        <div class="nav-links" aria-label="Top-level menu">
+          <a class="nav-link is-active" href="#home" data-view-link="home" data-i18n="navHome">Home</a>
+          <a class="nav-link" href="#research" data-view-link="research" data-i18n="navResearch">Research Output</a>
+          <a class="nav-link" href="#people" data-view-link="people" data-i18n="navPeople">Team Members</a>
+          <a class="nav-link" href="#news" data-view-link="news" data-i18n="navNews">News</a>
+          <a class="nav-link" href="#about" data-view-link="about" data-i18n="navAbout">About Us</a>
+          <a class="nav-link" href="#join" data-view-link="join" data-i18n="navJoinContact">Join / Contact</a>
+        </div>
+
+        <div class="nav-tools">
+          <button class="search-trigger" type="button" data-search-open aria-label="Open search">
+            <span class="search-icon" aria-hidden="true"></span>
+            <span data-i18n="searchTrigger">Search</span>
+          </button>
+
+          <div class="language-switcher" aria-label="Language switcher">
+            <button class="lang-button is-active" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="zh">中文</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="search-panel" data-search-panel aria-hidden="true">
+        <div class="search-panel-shell">
+          <span class="search-icon search-panel-icon" aria-hidden="true"></span>
+          <input class="search-input" type="search" data-search-input placeholder="Search the center" autocomplete="off">
+          <button class="search-close" type="button" data-search-close aria-label="Close search">×</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-frost" data-search-backdrop></div>
+
+    <main id="main" class="view-root">
+      <section class="hero page-view is-active" id="home" data-view="home">
+        <div class="home-media" data-collapsible-media>
+          <div class="media-track" data-media-track>
+            <figure class="media-slide is-active">
+              <img src="{{ '/assets/img/team/experiments.gif' | relative_url }}" alt="Underwater robotics experiment in a test pool">
+            </figure>
+            <figure class="media-slide">
+              <img src="{{ '/assets/img/team/mine.gif' | relative_url }}" alt="Underwater mining robotics experiment">
+            </figure>
+          </div>
+          <button class="media-control media-control-prev" type="button" data-media-prev aria-label="Previous media">‹</button>
+          <button class="media-control media-control-next" type="button" data-media-next aria-label="Next media">›</button>
+          <div class="media-dots" aria-label="Media carousel">
+            <button class="media-dot is-active" type="button" data-media-dot="0" aria-label="Show first media"></button>
+            <button class="media-dot" type="button" data-media-dot="1" aria-label="Show second media"></button>
+          </div>
+        </div>
+
+        <div class="overview-section">
+          <div class="overview-copy">
+            <p class="eyebrow" data-i18n="overviewEyebrow">At a Glance</p>
+            <h1 data-i18n="overviewTitle">Embodied intelligence R&D for underwater environments</h1>
+            <p class="overview-lede" data-i18n="overviewBody">
+              The center focuses on underwater robotics, intelligent perception, simulation-based validation, and autonomous systems for complex underwater environments.
+            </p>
+          </div>
+
+          <div class="overview-cards" aria-label="Center focus areas">
+            <article class="overview-card overview-card-teal">
+              <img src="{{ '/assets/img/team/experiments.gif' | relative_url }}" alt="Underwater sensing experiment">
+              <div class="overview-card-glass">
+                <h3 data-i18n="overviewCardOneTitle">Perception and Understanding</h3>
+                <p data-i18n="overviewCardOneBody">Multimodal perception and scene understanding for low-light, dynamic underwater environments.</p>
+              </div>
+            </article>
+            <article class="overview-card overview-card-blue">
+              <img src="{{ '/assets/img/team/mine.gif' | relative_url }}" alt="Underwater robotic system experiment">
+              <div class="overview-card-glass">
+                <h3 data-i18n="overviewCardTwoTitle">Autonomy and Control</h3>
+                <p data-i18n="overviewCardTwoBody">Embodied decision-making, motion control, and mission planning for underwater robotic systems.</p>
+              </div>
+            </article>
+            <article class="overview-card overview-card-indigo">
+              <img src="{{ '/assets/img/underwater-robot-simulator-framework.png' | relative_url }}" alt="Underwater robot simulation framework">
+              <div class="overview-card-glass">
+                <h3 data-i18n="overviewCardThreeTitle">Simulation and Platforms</h3>
+                <p data-i18n="overviewCardThreeBody">Simulation, digital twins, and experimental platforms for repeatable algorithm validation.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="hero-actions overview-actions">
+            <a class="button primary" href="#research" data-view-link="research" data-i18n="overviewPrimary">View research output</a>
+            <a class="button secondary" href="#about" data-view-link="about" data-i18n="overviewSecondary">About the center</a>
+          </div>
+        </div>
+
+        <div class="home-section home-research">
+          <div class="home-section-head">
+            <p class="eyebrow" data-i18n="homeResearchEyebrow">Academic Research</p>
+            <a class="text-link" href="#research" data-view-link="research" data-i18n="homeResearchLink">Explore research output</a>
+          </div>
+          <div class="home-research-board" data-research-board>
+            <div class="home-research-visual">
+              <img class="is-active" src="{{ '/assets/img/team/experiments.gif' | relative_url }}" alt="Underwater robotics experiment" data-research-image="0">
+              <img src="{{ '/assets/img/team/mine.gif' | relative_url }}" alt="Underwater robot prototype experiment" data-research-image="1">
+              <img src="{{ '/assets/img/underwater-robot-simulator-framework.png' | relative_url }}" alt="Underwater simulation framework" data-research-image="2">
+            </div>
+            <div class="home-research-panel">
+              <article class="home-research-feature is-active" data-research-item="0" tabindex="0">
+                <div class="research-date">
+                  <span>01</span>
+                  <strong data-i18n="homeResearchOneTag">Embodied AI</strong>
+                </div>
+                <div>
+                  <h2 data-i18n="homeResearchOneTitle">Underwater Embodied Intelligence</h2>
+                  <p data-i18n="homeResearchOneBody">Models and systems that couple perception, action, and environment feedback.</p>
+                </div>
+              </article>
+              <article class="home-research-row" data-research-item="1" tabindex="0">
+                <span data-i18n="homeResearchTwoTag">Perception</span>
+                <h3 data-i18n="homeResearchTwoTitle">Intelligent Perception</h3>
+                <p data-i18n="homeResearchTwoBody">Robust sensing and understanding under low visibility and dynamic water conditions.</p>
+              </article>
+              <article class="home-research-row" data-research-item="2" tabindex="0">
+                <span data-i18n="homeResearchThreeTag">Autonomy</span>
+                <h3 data-i18n="homeResearchThreeTitle">Autonomous Decision and Control</h3>
+                <p data-i18n="homeResearchThreeBody">Planning, control, and task execution for underwater robotic platforms.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-section">
+          <div class="home-section-heading">
+            <p class="eyebrow" data-i18n="homeShowcaseEyebrow">Showcase</p>
+            <h2 data-i18n="homeShowcaseTitle">Platforms and prototypes under active development</h2>
+          </div>
+          <div class="showcase-grid">
+            <article class="showcase-card">
+              <img src="{{ '/assets/img/team/experiments.gif' | relative_url }}" alt="Underwater experiment platform">
+              <div>
+                <p data-i18n="homeShowcaseOneTag">Experiment Platform</p>
+                <h3 data-i18n="homeShowcaseOneTitle">Water tank robotic validation</h3>
+              </div>
+            </article>
+            <article class="showcase-card">
+              <img src="{{ '/assets/img/underwater-robot-simulator-framework.png' | relative_url }}" alt="Simulation framework">
+              <div>
+                <p data-i18n="homeShowcaseTwoTag">Simulation System</p>
+                <h3 data-i18n="homeShowcaseTwoTitle">Underwater simulation workflow</h3>
+              </div>
+            </article>
+            <article class="showcase-card">
+              <img src="{{ '/assets/img/team/mine.gif' | relative_url }}" alt="Underwater robotic prototype">
+              <div>
+                <p data-i18n="homeShowcaseThreeTag">Robot Prototype</p>
+                <h3 data-i18n="homeShowcaseThreeTitle">Field-oriented embodied systems</h3>
+              </div>
+            </article>
+          </div>
+          <a class="text-link home-section-link" href="#research" data-view-link="research" data-i18n="homeShowcaseLink">View more outcomes</a>
+        </div>
+
+        <div class="home-section home-news">
+          <div class="home-section-heading">
+            <p class="eyebrow" data-i18n="homeNewsEyebrow">Information Center</p>
+            <h2 data-i18n="homeNewsTitle">Recent updates from the center</h2>
+          </div>
+          <div class="home-news-list">
+            <article>
+              <time datetime="2026-04-30">2026.04.30</time>
+              <span data-i18n="homeNewsOne">Homepage demo refined for local review and GitHub Pages deployment.</span>
+            </article>
+            <article>
+              <time datetime="2026-04-29">2026.04.29</time>
+              <span data-i18n="homeNewsTwo">GIF carousel and footer identity system added to the center website.</span>
+            </article>
+            <article>
+              <time datetime="2026-04-28">2026.04.28</time>
+              <span data-i18n="homeNewsThree">Initial bilingual team homepage released for internal evaluation.</span>
+            </article>
+          </div>
+          <a class="text-link home-section-link" href="#news" data-view-link="news" data-i18n="homeNewsLink">Open news center</a>
+        </div>
+      </section>
+
+      <section class="section page-view" id="research" data-view="research">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="researchEyebrow">Research Output</p>
+          <h2 data-i18n="researchTitle">Research output and representative work</h2>
+          <p data-i18n="researchIntro">
+            The demo groups current work into three directions that can be replaced with the team's real research agenda.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="card-index">01</span>
+            <h3 data-i18n="researchOneTitle">Underwater Robotics</h3>
+            <p data-i18n="researchOneBody">
+              Vehicle modeling, sensing pipelines, and autonomy workflows for marine field environments.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">02</span>
+            <h3 data-i18n="researchTwoTitle">Robot Simulation</h3>
+            <p data-i18n="researchTwoBody">
+              Isaac Sim and OceanSim based environments for repeatable testing, evaluation, and data generation.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">03</span>
+            <h3 data-i18n="researchThreeTitle">Systems Infrastructure</h3>
+            <p data-i18n="researchThreeBody">
+              Containers, remote visualization, server workflows, and reproducible engineering environments.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tinted page-view" id="projects" data-view="research">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projectsEyebrow">Projects</p>
+          <h2 data-i18n="projectsTitle">Representative work in progress</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-item">
+            <div>
+              <p class="project-status" data-i18n="projectOneStatus">Prototype</p>
+              <h3 data-i18n="projectOneTitle">OceanSim Integration Toolkit</h3>
+            </div>
+            <p data-i18n="projectOneBody">
+              A practical setup path for underwater robot simulation assets, sensors, and Isaac Sim deployment.
+            </p>
+          </article>
+          <article class="project-item">
+            <div>
+              <p class="project-status" data-i18n="projectTwoStatus">Infrastructure</p>
+              <h3 data-i18n="projectTwoTitle">Remote Simulation Workbench</h3>
+            </div>
+            <p data-i18n="projectTwoBody">
+              Server-side GUI, WebRTC streaming, container images, and shared development workflows.
+            </p>
+          </article>
+          <article class="project-item">
+            <div>
+              <p class="project-status" data-i18n="projectThreeStatus">Study</p>
+              <h3 data-i18n="projectThreeTitle">Underwater Simulator Review</h3>
+            </div>
+            <p data-i18n="projectThreeBody">
+              Comparative notes on simulation frameworks, tradeoffs, and gaps for field robotics research.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section page-view" id="people" data-view="people">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="peopleEyebrow">Team Members</p>
+          <h2 data-i18n="peopleTitle">Team structure placeholder</h2>
+          <p data-i18n="peopleIntro">
+            Replace these demo profiles with the principal investigator, students, collaborators, and alumni.
+          </p>
+        </div>
+        <div class="people-grid">
+          <article class="person-card">
+            <span class="avatar">PI</span>
+            <h3 data-i18n="personOneName">Principal Investigator</h3>
+            <p data-i18n="personOneRole">Robotics and intelligent systems</p>
+          </article>
+          <article class="person-card">
+            <span class="avatar">RS</span>
+            <h3 data-i18n="personTwoName">Research Student</h3>
+            <p data-i18n="personTwoRole">Simulation and perception</p>
+          </article>
+          <article class="person-card">
+            <span class="avatar">SE</span>
+            <h3 data-i18n="personThreeName">Systems Engineer</h3>
+            <p data-i18n="personThreeRole">Infrastructure and deployment</p>
+          </article>
+          <article class="person-card">
+            <span class="avatar">CL</span>
+            <h3 data-i18n="personFourName">Collaborator</h3>
+            <p data-i18n="personFourRole">Marine robotics applications</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tinted page-view" id="news" data-view="news">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="updatesEyebrow">News</p>
+          <h2 data-i18n="updatesTitle">Team news and milestones</h2>
+        </div>
+        <div class="updates-list">
+          <article class="update-item">
+            <time datetime="2026-04-28">2026.04.28</time>
+            <span data-i18n="updateOne">Team homepage demo published for internal review</span>
+          </article>
+          <article class="update-item">
+            <time datetime="2026-04-15">2026.04.15</time>
+            <span data-i18n="updateTwo">Prototype research directions prepared for replacement</span>
+          </article>
+          <article class="update-item">
+            <time datetime="2026-04-01">2026.04.01</time>
+            <span data-i18n="updateThree">Placeholder member and project structure drafted</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section page-view" id="about" data-view="about">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="aboutEyebrow">About Us</p>
+          <h2 data-i18n="aboutTitle">A lab-shaped demo for robotics research</h2>
+          <p data-i18n="aboutBody">
+            This page is a placeholder for the team's mission, institution, research culture, facilities, and collaboration model.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="card-index">A</span>
+            <h3 data-i18n="aboutOneTitle">Mission</h3>
+            <p data-i18n="aboutOneBody">Build dependable robotic systems for complex marine environments.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">B</span>
+            <h3 data-i18n="aboutTwoTitle">Method</h3>
+            <p data-i18n="aboutTwoBody">Connect simulation, software infrastructure, and field validation.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">C</span>
+            <h3 data-i18n="aboutThreeTitle">Collaboration</h3>
+            <p data-i18n="aboutThreeBody">Work with students, labs, and engineering partners on deployable outcomes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section page-view" id="join" data-view="join">
+        <div class="contact-copy">
+          <p class="eyebrow" data-i18n="contactEyebrow">Join / Contact</p>
+          <h2 data-i18n="contactTitle">Open to collaboration, students, and field-oriented projects</h2>
+          <p data-i18n="contactBody">
+            This section can be replaced with the team's official email, institution, GitHub organization, and recruitment information.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:team@example.edu">team@example.edu</a>
+          <a href="https://github.com/szzhuang22">github.com/szzhuang22</a>
+          <span data-i18n="contactLocation">Institution / Lab location placeholder</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="footer-shell">
+        <div class="footer-meta">
+          <p class="footer-heading">水下具身智能学科与技术中心</p>
+          <p>Underwater Embodied Intelligence Discipline and Technology Center</p>
+          <p>Copyright © 2026 UWEI Center</p>
+        </div>
+
+        <div class="footer-brand" aria-label="Center logo">
+          <img src="{{ '/assets/img/team/uwei-logo-grey.png' | relative_url }}" alt="Underwater Embodied Intelligence Discipline and Technology Center logo">
+          <img src="{{ '/assets/img/team/ioa-logo-grey.png' | relative_url }}" alt="Institute of Automation logo">
+        </div>
+
+        <div class="footer-links" aria-label="Contact links">
+          <p class="footer-heading">Contact</p>
+          <a href="mailto:team@example.edu">team@example.edu</a>
+          <a href="https://github.com/szzhuang22">GitHub</a>
+          <span>Beijing, China</span>
+        </div>
+      </div>
+      <p class="footer-address">地址：北京市海淀区北四环西路21号中国科学院声学研究所&nbsp;&nbsp;&nbsp;&nbsp;邮编：100190</p>
+    </footer>
+
+    <script src="{{ '/assets/js/team-home.js' | relative_url }}"></script>
+  </body>
+</html>
